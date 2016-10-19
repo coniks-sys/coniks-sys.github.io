@@ -36,7 +36,7 @@ DISPLAY_CATEGORIES_ON_MENU = False
 DISPLAY_NEWS = True
 DISPLAY_RECENT_POSTS_ON_SIDEBAR = False;
 
-THEME = 'style/pelican-bootstrap3'
+THEME = 'pelican-bootstrap3'
 BOOTSTRAP_THEME = 'flatly'
 
 STATIC_PATHS = ['static/Rochlin_Michael.pdf']
