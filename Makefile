@@ -12,7 +12,7 @@ FTP_HOST=localhost
 FTP_USER=anonymous
 FTP_TARGET_DIR=/
 
-SSH_HOST=tux.cs.princeton.edu
+SSH_HOST=wash.cs.princeton.edu
 SSH_PORT=22
 SSH_USER=melara
 SSH_TARGET_DIR=/n/fs/coniks/www

@@ -22,7 +22,6 @@ Summary: CONIKS is a joint effort of a team of researchers from Princeton Univer
 </div>
 
 <div class="inner">
-<<<<<<< HEAD
 <p><b><a href="http://www.jbonneau.com">Joseph Bonneau</a></b> is a post-doc at Stanford University and a Technology Fellow at the Electronic Frontier Foundation.</p>
 </div>
 </div>
@@ -39,11 +38,8 @@ CONIKS into Tor Messenger.</p>
 works on coniks-go and on integrating CONIKS into Tor Messenger. Huy
 began his collaboration as part of Google Summer of Code 2016.</p>
 
-<p><b>Ismail Khoffi</b> is a security and privacy software engineer in the 
+<p><b>Ismail Khoffi</b> is a security and privacy software engineer in the
 DEDIS Lab at EPFL, and works on coniks-go.</p>
-=======
-<p><b><a href="http://www.jbonneau.com">Joseph Bonneau</a></b> is post-doc at Stanford University and a Technology Fellow at the Electronic Frontier Foundation.</p>
->>>>>>> 12b74612da8cee39869fe09518ad474168da050f
 </div>
 </div>
 
@@ -53,7 +49,3 @@ DEDIS Lab at EPFL, and works on coniks-go.</p>
 <p><b>Michael Rochlin</b> contributed to CONIKS during the 2014/2015 academic year as an undergraduate at Princeton.</p>
 </div>
 </div>
-
-
-
-
