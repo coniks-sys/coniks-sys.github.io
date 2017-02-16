@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = 'Marcela Melara'
+AUTHOR = 'CONIKS Team'
 SITENAME = 'CONIKS'
 SITEURL = ''
 
@@ -28,7 +28,8 @@ AUTHOR_FEED_RSS = None
 USE_OPEN_GRAPH = False
 
 # Social widget
-SOCIAL = (('github', 'https://github.com/coniks-sys'),)
+SOCIAL = (('github', 'https://github.com/coniks-sys'),
+('twitter', 'http://twitter.com/coniks_sys'))
 
 DISPLAY_PAGES_ON_MENU = True
 DEFAULT_PAGINATION = False
