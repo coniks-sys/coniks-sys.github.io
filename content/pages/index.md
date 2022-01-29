@@ -28,19 +28,3 @@ getting caught.
 </p>
 <p><a class="text-success" href="get_involved.html">Get involved with CONIKS &raquo;</a>
 </div>
-
-<div class="col-md-6 row-lg">
-<h5><b>Sign up for updates and discussions on CONIKS:</b></h5>
-<form class="form-horizontal" action="https://lists.cs.princeton.edu/mailman/subscribe/coniks">
-      <div class="form-group">
-        <div class="col-sm-6">
-        <input class="form-control" id="inputEmail" placeholder="Email" type="text" name="email" required>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="col-sm-2">
-        <button type="submit" class="btn btn-success">Sign Up</button>
-        </div>
-      </div>
-</form>
-</div>
