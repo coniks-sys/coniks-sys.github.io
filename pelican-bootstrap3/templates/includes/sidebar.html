@@ -7,8 +7,7 @@
         {% if SOCIAL %}
             <li class="list-group-item"><h4><span class="icon-label">Contact</span></h4>
               <ul class="list-group" id="social">
-              <li class="list-group-item"><a href="mailto:melara@cs.princeton.edu?Subject=Get involved with CONIKS"><i class="fa fa-envelope-square fa-lg"></i> email</a></li>
-              <li class="list-group-item"><a href="subscribe.html"><i class="fa fa-users fa-md"></i> mailing list</a></li>
+              <li class="list-group-item"><a href="https://groups.google.com/g/coniks-sys"><i class="fa fa-users fa-md"></i> Google Groups</a></li>
                 {% for s in SOCIAL %}
                     {% if s[2] %}
                         {% set name_sanitized = s[2]|lower|replace('+','-plus')|replace(' ','-') %}

@@ -8,7 +8,7 @@ SITEURL = ''
 
 PATH = 'content'
 
-TIMEZONE = 'America/New_York'
+TIMEZONE = 'America/Los_Angeles'
 
 DEFAULT_LANG = 'en'
 DEFAULT_DATE_FORMAT = '%m-%d-%Y'

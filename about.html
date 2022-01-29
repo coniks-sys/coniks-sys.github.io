@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>About CONIKS - CONIKS</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<link rel="canonical" href="/about.html">
+
+        <meta name="author" content="CONIKS Team" />
+        <meta name="description" content="Trust establishment and key verification are the main challenges to usable end-to-end encrypted communication. CONIKS solves this problem by providing key transparency." />
+
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="/theme/css/bootstrap.flatly.min.css" type="text/css"/>
+    <link href="/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="/theme/css/pygments/native.css" rel="stylesheet">
+    <link rel="stylesheet" href="/theme/css/style.css" type="text/css"/>
+
+
+
+
+
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container">
+        <div class="navbar-header">
+            <a href="/" class="navbar-brand">
+CONIKS            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                         <li><a href="/">
+                             Home
+                          </a></li>
+                         <li class="active"><a href="/about.html">
+                             About CONIKS
+                          </a></li>
+                         <li><a href="/research.html">
+                             Research
+                          </a></li>
+                         <li><a href="/get_involved.html">
+                             Get Involved
+                          </a></li>
+                         <li><a href="/team.html">
+                             Team
+                          </a></li>
+                         <li><a href="/press.html">
+                             Press
+                          </a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+<!-- Banner -->
+<!-- End Banner -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+    <section id="content" class="body">
+          <h1 class="entry-title">About CONIKS</h1>
+        
+        <div class="entry-content">
+            <div class="col-md-12">
+<ul>
+<li><a href="#whyweneedconiks">Why we need CONIKS</a></li>
+<li><a href="#solution">Our Solution</a></li>
+</ul>
+
+<hr>
+
+<a name="whyweneedconiks"></a>
+<h4>Why we need CONIKS</h4>
+<p>Billions of users today rely on online services for their sensitive communication. As these users learn about the myriad of threats to the security and privacy of their communication, their demand for end-to-end secure communication is growing steadily. To meet this demand, an increasing number of existing and new communication service providers are adopting end-to-end encryption. They have realized by now that key management is difficult for the vast majority of users but one important problem remains largely unsolved, namely how do users establish trust? </p>
+
+<p>Trust establishment is about how communicating parties learn about and verify each other’s encryption keys before establishing the secure communication channel. Existing methods for trust establishment have two main problems. Many secure messaging applications require users to establish trust out of band, which is an error-prone and unintuitive process since users must reason explicitly about encryption. Other secure communication services handle key management and trust establishment automatically on behalf of their users, but this allows the service providers (and malicious outsiders!) to tamper with their users' keys giving them access to private messages. CONIKS addresses these shortcomings to create a secure and usable trust establishment method that secure communication service providers can easily adopt.</p>
+
+<a name="solution"></a>
+<h4 class="row-md">Our solution: Key Transparency</h4>
+<p>CONIKS enables automated trust establishment with untrusted communication service providers by having the service provider maintain an auditable directory of all of its users' keys.</p>
+
+<p>The CONIKS client software on a user's device simply registers the user's online name (e.g. alice@example.com) mapped to a previously-generated public key in the provider's key directory. Then when Alice wants to send a secure message to some other user, say Bob, her CONIKS client looks up Bob's key at the key directory, and verifies that this key has not changed unexpectedly over time. It also checks that this key is consistent with the key other clients are seeing for Bob. Only if these two consistency checks pass will the CONIKS client send Alice's message to Bob. The CONIKS client also performs these same checks for Alice's own key on a regular basis to ensure that the service provider is not tampering with Alice's key.</p>
+
+<p>CONIKS makes these consistency checks possible by requiring that a service provider's key directory be stored in a tamper-evident fashion so that any changes to the contents of the directory are immediately detectable by CONIKS clients. To make these checks efficient, the provider must periodically generate a "summary" of its key directory so clients do not have to check the contents of the directory directly as well as to preserve users' privacy. Lastly, providers must digitally sign these directory summaries as a commitment to the state of their key directory at some point in time, and they must share these summaries with other CONIKS service providers. This way, CONIKS clients can see and compare their view of the provider's key directory with what others in the system are observing, and if a client ever detects inconsistent summaries, clients have irrefutable proof of the misbehavior since they contain the provider's signature.</p>
+
+</div>
+        </div>
+    </section>
+        </div>
+        <div class="col-sm-3" id="sidebar">
+            <aside>
+
+<section class="well well-sm">
+    <ul class="list-group list-group-flush">
+            <li class="list-group-item"><h4><span class="icon-label">Contact</span></h4>
+              <ul class="list-group" id="social">
+              <li class="list-group-item"><a href="https://groups.google.com/g/coniks-sys"><i class="fa fa-users fa-md"></i> Google Groups</a></li>
+                <li class="list-group-item"><a href="https://github.com/coniks-sys"><i class="fa fa-github-square fa-lg"></i> github</a></li>
+                <li class="list-group-item"><a href="http://twitter.com/coniks_sys"><i class="fa fa-twitter-square fa-lg"></i> twitter</a></li>
+              </ul>
+            </li>
+
+
+
+
+
+    </ul>
+</section>
+            </aside>
+        </div>
+    </div>
+</div>
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy;  CONIKS Team
+            &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="/theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="/theme/js/respond.min.js"></script>
+
+
+</body>
+</html>

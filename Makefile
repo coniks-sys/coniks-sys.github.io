@@ -4,7 +4,7 @@ PELICANOPTS=
 
 BASEDIR=$(CURDIR)
 INPUTDIR=$(BASEDIR)/content
-OUTPUTDIR=$(BASEDIR)/output
+OUTPUTDIR=$(BASEDIR)
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
 
@@ -12,10 +12,10 @@ FTP_HOST=localhost
 FTP_USER=anonymous
 FTP_TARGET_DIR=/
 
-SSH_HOST=wash.cs.princeton.edu
-SSH_PORT=22
-SSH_USER=melara
-SSH_TARGET_DIR=/n/fs/coniks/www
+SSH_HOST=
+SSH_PORT=
+SSH_USER=
+SSH_TARGET_DIR=
 
 S3_BUCKET=my_s3_bucket
 
@@ -65,7 +65,7 @@ html:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
 clean:
-	[ ! -d $(OUTPUTDIR) ] || rm -rf $(OUTPUTDIR)
+	rm $(OUTPUTDIR)/*.html
 
 regenerate:
 	$(PELICAN) -r $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
